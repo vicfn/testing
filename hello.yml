@@ -1,0 +1,12 @@
+---
+- name: Hello World!
+  hosts: gem-acontrol-001
+
+  tasks:
+
+  - name: Hello World!
+    shell: echo "Hi! Tower is working!"
+
+  - name: Hostname
+    system.builtin.debug: 
+      msg: "My hostname is {{ ansible_host }}"
